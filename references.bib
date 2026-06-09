@@ -1,50 +1,191 @@
-@techreport{itu-p676,
-  author = {{ITU-R}},
-  title = {Recommendation {ITU-R} P.676-13: Attenuation by atmospheric gases and related effects},
-  institution = {International Telecommunication Union},
-  year = {2022},
-  month = {August},
-  url = {https://www.itu.int/rec/R-REC-P.676-13-202208-I/en}
+% ═══════════════════════════════════════════════════════════════════
+%  EMDT — Reference Bibliography
+% ═══════════════════════════════════════════════════════════════════
+
+% --- Deep-Space Network & Interplanetary Communication ---
+
+@article{taylor2006dsn,
+  author  = {Taylor, Jim and Sakamoto, Les and Wong, Chao-Jen},
+  title   = {Telecommunication System Design for the {Mars Reconnaissance Orbiter}},
+  journal = {DESCANSO Design and Performance Summary Series},
+  volume  = {12},
+  year    = {2006},
+  publisher = {Jet Propulsion Laboratory, NASA}
 }
+
+@inproceedings{morabito2002dsn,
+  author    = {Morabito, David D.},
+  title     = {The Spacecraft Communications Blackout Problem Encountered during Passage or Entry of Planetary Atmospheres},
+  booktitle = {IPN Progress Report},
+  volume    = {42-150},
+  year      = {2002},
+  publisher = {Jet Propulsion Laboratory, NASA}
+}
+
+@article{jpl2017ccsds,
+  author  = {{Consultative Committee for Space Data Systems}},
+  title   = {Proximity-1 Space Link Protocol---Data Link Layer},
+  journal = {CCSDS Recommended Standard},
+  number  = {211.0-B-6},
+  year    = {2017}
+}
+
+% --- Bundle Protocol & DTN ---
 
 @misc{rfc9171,
-  series = {Request for Comments},
-  number = 9171,
+  series       = {Request for Comments},
+  number       = 9171,
   howpublished = {RFC 9171},
-  publisher = {RFC Editor},
-  doi = {10.17487/RFC9171},
-  url = {https://www.rfc-editor.org/info/rfc9171},
-  author = {Scott Burleigh and Kevin Fall and Edward J. Birrane},
-  title = {{Bundle Protocol Version 7}},
-  year = 2022,
-  month = jan
+  publisher    = {RFC Editor},
+  doi          = {10.17487/RFC9171},
+  url          = {https://www.rfc-editor.org/info/rfc9171},
+  author       = {Scott Burleigh and Kevin Fall and Edward J. Birrane},
+  title        = {{Bundle Protocol Version 7}},
+  year         = 2022,
+  month        = jan
 }
 
-@article{boussoufa2022rf,
-  author = {Boussoufa, Nabil and Le Naour, Tifenn and Goudard, Nicolas},
-  title = {RF Eigenfingerprints, an Efficient RF Fingerprinting Method in IoT Context},
-  journal = {Sensors},
-  volume = {22},
-  number = {11},
-  year = {2022},
-  doi = {10.3390/s22114321},
-  publisher = {MDPI}
+@article{fall2003dtn,
+  author  = {Fall, Kevin},
+  title   = {A Delay-Tolerant Network Architecture for Challenged Internets},
+  journal = {ACM SIGCOMM Computer Communication Review},
+  volume  = {33},
+  number  = {4},
+  pages   = {27--34},
+  year    = {2003},
+  doi     = {10.1145/863955.863960}
 }
+
+@inproceedings{caini2011dtn,
+  author    = {Caini, Carlo and Cruickshank, Haitham and Farrell, Stephen and Marchese, Mario},
+  title     = {Delay- and Disruption-Tolerant Networking ({DTN}): An Alternative Solution for Future Satellite Networking Applications},
+  booktitle = {Proceedings of the IEEE},
+  volume    = {99},
+  number    = {11},
+  pages     = {1980--1997},
+  year      = {2011},
+  doi       = {10.1109/JPROC.2011.2158378}
+}
+
+% --- LDPC & Error Correction ---
 
 @article{gallager1962low,
-  author = {Gallager, Robert},
+  author  = {Gallager, Robert},
   journal = {IRE Transactions on Information Theory},
-  title = {Low-density parity-check codes},
-  year = {1962},
-  volume = {8},
-  number = {1},
-  pages = {21--28},
-  doi = {10.1109/TIT.1962.1057683}
+  title   = {Low-density parity-check codes},
+  year    = {1962},
+  volume  = {8},
+  number  = {1},
+  pages   = {21--28},
+  doi     = {10.1109/TIT.1962.1057683}
+}
+
+@article{mackay1999good,
+  author  = {MacKay, David J. C. and Neal, Radford M.},
+  title   = {Near Shannon limit performance of low density parity check codes},
+  journal = {Electronics Letters},
+  volume  = {33},
+  number  = {6},
+  pages   = {457--458},
+  year    = {1997},
+  doi     = {10.1049/el:19970362}
 }
 
 @book{richardson2008modern,
-  author = {Richardson, Thomas and Urbanke, R{\"u}diger},
-  title = {Modern Coding Theory},
+  author    = {Richardson, Thomas and Urbanke, R{\"u}diger},
+  title     = {Modern Coding Theory},
   publisher = {Cambridge University Press},
-  year = {2008}
+  year      = {2008}
+}
+
+@inproceedings{ccsds2020ldpc,
+  author    = {{Consultative Committee for Space Data Systems}},
+  title     = {Low Density Parity Check Codes for Use in Near-Earth and Deep Space Applications},
+  booktitle = {CCSDS Experimental Specification},
+  number    = {131.1-O-2},
+  year      = {2020}
+}
+
+% --- RF Fingerprinting & Physical Layer Security ---
+
+@article{boussoufa2022rf,
+  author    = {Boussoufa, Nabil and Le Naour, Tifenn and Goudard, Nicolas},
+  title     = {RF Eigenfingerprints, an Efficient RF Fingerprinting Method in IoT Context},
+  journal   = {Sensors},
+  volume    = {22},
+  number    = {11},
+  year      = {2022},
+  doi       = {10.3390/s22114321},
+  publisher = {MDPI}
+}
+
+@article{danev2012transient,
+  author  = {Danev, Boris and Zanetti, Davide and Capkun, Srdjan},
+  title   = {On Physical-Layer Identification of Wireless Devices},
+  journal = {ACM Computing Surveys},
+  volume  = {45},
+  number  = {1},
+  pages   = {1--29},
+  year    = {2012},
+  doi     = {10.1145/2379776.2379782}
+}
+
+@inproceedings{brik2008wireless,
+  author    = {Brik, Vladimir and Banerjee, Suman and Gruteser, Marco and Oh, Sangho},
+  title     = {Wireless device identification with radiometric signatures},
+  booktitle = {Proceedings of the 14th ACM International Conference on Mobile Computing and Networking (MobiCom)},
+  pages     = {116--127},
+  year      = {2008},
+  doi       = {10.1145/1409944.1409959}
+}
+
+% --- Channel Modelling & Propagation ---
+
+@techreport{itu-p676,
+  author      = {{ITU-R}},
+  title       = {Recommendation {ITU-R} P.676-13: Attenuation by atmospheric gases and related effects},
+  institution = {International Telecommunication Union},
+  year        = {2022},
+  month       = {August},
+  url         = {https://www.itu.int/rec/R-REC-P.676-13-202208-I/en}
+}
+
+@book{proakis2007digital,
+  author    = {Proakis, John G. and Salehi, Masoud},
+  title     = {Digital Communications},
+  edition   = {5th},
+  publisher = {McGraw-Hill},
+  year      = {2007}
+}
+
+% --- Solar Weather & Space Environment ---
+
+@article{schrijver2015solar,
+  author  = {Schrijver, Carolus J. and Kauristie, Kirsti and Aylward, Alan D. and Denardini, Clezio M. and Gibson, Sarah E. and Glover, Alexi and Gopalswamy, Nat and Grande, Manuel and Hapgood, Mike and Heynderickx, Daniel and others},
+  title   = {Understanding space weather to shield society: A global road map for 2015--2025 commissioned by {COSPAR} and {ILWS}},
+  journal = {Advances in Space Research},
+  volume  = {55},
+  number  = {12},
+  pages   = {2745--2807},
+  year    = {2015},
+  doi     = {10.1016/j.asr.2015.03.023}
+}
+
+@article{hapgood2011towards,
+  author  = {Hapgood, Mike A.},
+  title   = {Towards a scientific understanding of the risk from extreme space weather},
+  journal = {Advances in Space Research},
+  volume  = {47},
+  number  = {12},
+  pages   = {2059--2072},
+  year    = {2011},
+  doi     = {10.1016/j.asr.2010.02.007}
+}
+
+@misc{nasa2024donki,
+  author       = {{NASA Goddard Space Flight Center}},
+  title        = {{DONKI}: Space Weather Database of Notifications, Knowledge, Information},
+  howpublished = {\url{https://kauai.ccmc.gsfc.nasa.gov/DONKI}},
+  year         = {2024},
+  note         = {Accessed: 2024-05-31}
 }
