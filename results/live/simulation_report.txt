@@ -1,0 +1,28 @@
+================================================================
+  EMDT SYSTEM — SIMULATION RESULTS REPORT
+================================================================
+
+  Reactive avg packet loss   : 61.745%
+  EMDT AIRC avg packet loss  : 57.357%
+  EMDT Full pipeline loss    : 17.6713%
+
+  Routing improvement (M1)   : 7.1%
+  Full pipeline improvement  : 71.4%
+
+  Retransmission delay saved : 71.4%
+    Reactive delay           : 1556 hours
+    EMDT delay               : 445 hours
+
+  BER @ SNR=10dB (uncoded)   : 4.37e-06
+  BER @ SNR=10dB (AEIL)      : 4.22e-08
+
+----------------------------------------------------------------
+  IEEE TARGET SCORECARD
+----------------------------------------------------------------
+  M1 Routing > 15%              ✗ FAIL
+  M2 BER < 1.1e-4               ✓ PASS
+  Full pipeline > 60%           ✓ PASS
+  Delay reduction > 50%         ✓ PASS
+
+  ❌ STATUS: SOME TARGETS FAILED — REVIEW PARAMETERS
+================================================================
